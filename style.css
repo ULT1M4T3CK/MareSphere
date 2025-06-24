@@ -809,7 +809,7 @@ select.form-control {
 
 .contact-details h4 {
   font-size: var(--font-size-lg);
-  color: var(--maritime-navy-dark);
+  color: black;
   margin-bottom: var(--space-4);
 }
 
