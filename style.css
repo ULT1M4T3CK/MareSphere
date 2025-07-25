@@ -566,7 +566,7 @@ select.form-control {
 .hero {
   min-height: 100vh;
   background: var(--maritime-gradient);
-  background-image: url('./images/hero-banner.jpg');
+  background-image: url('./Images/hero-banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
