@@ -566,7 +566,7 @@ select.form-control {
 .hero {
   min-height: 100vh;
   background: var(--maritime-gradient);
-  background-image: url('./images/ship-background.svg');
+  background-image: url('./images/ship-background.jpg');
   background-size: 60% auto;
   background-position: center right;
   background-repeat: no-repeat;
