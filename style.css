@@ -566,9 +566,9 @@ select.form-control {
 .hero {
   min-height: 100vh;
   background: var(--maritime-gradient);
-  background-image: url('./images/ship-background.jpg');
-  background-size: 60% auto;
-  background-position: center right;
+  background-image: url('./images/hero-banner.jpg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -604,7 +604,7 @@ select.form-control {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -941,8 +941,8 @@ select.form-control {
   .nav-menu { display: none; }
   .mobile-menu-toggle { display: flex; }
   .hero {
-    background-size: 80% auto;
-    background-position: center center;
+    background-size: cover;
+    background-position: center;
   }
   .hero-buttons { flex-direction: column; align-items: center; }
   .hero-buttons .btn { width: 100%; max-width: 300px; }
@@ -955,8 +955,8 @@ select.form-control {
 
 @media (max-width: 480px) {
   .hero {
-    background-size: 100% auto;
-    background-position: center center;
+    background-size: cover;
+    background-position: center;
   }
   .hero-text { padding: 0 var(--space-16); }
   .service-card { padding: var(--space-24); }
