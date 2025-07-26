@@ -300,11 +300,19 @@ function initScrollEffects() {
 function initMobileMenu() {
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
     const mobileNavMenu = document.querySelector('.mobile-nav-menu');
+    const mobileNavClose = document.querySelector('.mobile-nav-close');
     
     if (mobileToggle && mobileNavMenu) {
         mobileToggle.addEventListener('click', function() {
             toggleMobileMenu();
         });
+        
+        // Close mobile menu when clicking the close button
+        if (mobileNavClose) {
+            mobileNavClose.addEventListener('click', function() {
+                closeMobileMenu();
+            });
+        }
         
         // Close mobile menu when clicking on a link
         const mobileNavLinks = mobileNavMenu.querySelectorAll('.nav-link');

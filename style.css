@@ -664,7 +664,8 @@ select.form-control {
   left: 0;
   right: 0;
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background: rgba(26, 62, 93, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -710,6 +711,34 @@ select.form-control {
   box-shadow: 
     0 4px 16px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: var(--maritime-white);
+}
+
+.mobile-nav-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-base);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-fast) var(--ease-standard);
+  z-index: 2001;
+}
+
+.mobile-nav-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.mobile-nav-close svg {
+  width: 20px;
+  height: 20px;
   color: var(--maritime-white);
 }
 
