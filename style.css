@@ -227,7 +227,7 @@ pre code {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-8) var(--space-16);
+  padding: var(--space-6) var(--space-16);
   border: none;
   border-radius: var(--radius-base);
   font-size: var(--font-size-base);
@@ -321,7 +321,7 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  padding: var(--space-8) var(--space-12);
+  padding: var(--space-6) var(--space-12);
   font-size: var(--font-size-md);
   line-height: 1.5;
   color: var(--color-text);
@@ -503,7 +503,7 @@ select.form-control {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-16) 0;
+  padding: var(--space-12) 0;
 }
 
 .logo h2 {
@@ -564,7 +564,7 @@ select.form-control {
 
 /* Hero section */
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   background: var(--maritime-gradient);
   background-image: url('./Images/hero-banner-2.jpeg');
   background-size: cover;
@@ -625,13 +625,13 @@ select.form-control {
 .hero-tagline {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
-  margin-bottom: var(--space-24);
+  margin-bottom: var(--space-16);
   color: var(--maritime-teal-light);
 }
 
 .hero-description {
   font-size: var(--font-size-lg);
-  margin-bottom: var(--space-32);
+  margin-bottom: var(--space-24);
   opacity: 0.9;
   line-height: 1.6;
 }
@@ -646,13 +646,13 @@ select.form-control {
 /* Sections */
 .section-header {
   text-align: center;
-  margin-bottom: var(--space-32);
+  margin-bottom: var(--space-24);
 }
 
 .section-header h2 {
   font-size: var(--font-size-3xl);
   color: var(--maritime-navy-dark);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-12);
 }
 
 .section-subtitle {
@@ -663,7 +663,7 @@ select.form-control {
 
 /* About section */
 .about {
-  padding: 80px 0;
+  padding: 60px 0;
   background: var(--maritime-off-white);
 }
 
@@ -682,19 +682,19 @@ select.form-control {
   font-size: var(--font-size-lg);
   color: var(--maritime-teal);
   font-weight: var(--font-weight-medium);
-  margin-bottom: var(--space-24);
+  margin-bottom: var(--space-16);
 }
 
 .about-description {
   font-size: var(--font-size-lg);
   line-height: 1.7;
-  margin-bottom: var(--space-32);
+  margin-bottom: var(--space-24);
 }
 
 .credentials {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-32);
+  gap: var(--space-24);
 }
 
 .credential-item h4 {
@@ -712,21 +712,21 @@ select.form-control {
 
 /* Services section */
 .services {
-  padding: 80px 0;
+  padding: 60px 0;
   background: var(--maritime-white);
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--space-32);
+  gap: var(--space-24);
 }
 
 .service-card {
   background: var(--maritime-white);
   border: 1px solid var(--color-card-border);
   border-radius: var(--radius-lg);
-  padding: var(--space-32);
+  padding: var(--space-24);
   text-align: center;
   box-shadow: var(--shadow-sm);
   transition: all var(--duration-normal) var(--ease-standard);
@@ -756,9 +756,9 @@ select.form-control {
 }
 
 .service-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto var(--space-24);
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-16);
   color: var(--maritime-teal);
   display: flex;
   align-items: center;
@@ -770,7 +770,7 @@ select.form-control {
 .service-card h3 {
   font-size: var(--font-size-xl);
   color: var(--maritime-navy-dark);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-12);
 }
 
 .service-card p {
@@ -780,36 +780,36 @@ select.form-control {
 
 /* Contact section */
 .contact {
-  padding: 80px 0;
+  padding: 60px 0;
   background: var(--maritime-off-white);
 }
 
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-32);
+  gap: var(--space-24);
   align-items: start;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: var(--space-24);
+  gap: var(--space-16);
 }
 
 .contact-item {
   display: flex;
   align-items: flex-start;
   gap: var(--space-16);
-  padding: var(--space-20);
+  padding: var(--space-16);
   background: var(--maritime-white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
 }
 
 .contact-icon {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background: rgba(74, 144, 164, 0.1);
   color: var(--maritime-teal);
   border-radius: 50%;
@@ -832,13 +832,13 @@ select.form-control {
 
 .contact-form-container {
   background: var(--maritime-white);
-  padding: var(--space-32);
+  padding: var(--space-24);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
 }
 
 .contact-form .form-group {
-  margin-bottom: var(--space-20);
+  margin-bottom: var(--space-16);
 }
 
 .contact-form .form-label {
@@ -886,14 +886,14 @@ select.form-control {
 .footer {
   background: var(--maritime-navy-dark);
   color: var(--maritime-white);
-  padding: var(--space-32) 0 var(--space-16);
+  padding: var(--space-24) 0 var(--space-16);
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-24);
+  margin-bottom: var(--space-16);
 }
 
 .footer-info h3 {
