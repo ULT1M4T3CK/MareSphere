@@ -227,16 +227,17 @@ pre code {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-6) var(--space-16);
+  padding: var(--space-10) var(--space-24);
   border: none;
   border-radius: var(--radius-base);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-lg);
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   text-decoration: none;
   transition: all var(--duration-normal) var(--ease-standard);
   position: relative;
+  min-height: 56px;
 }
 
 .btn:focus-visible {
@@ -791,10 +792,10 @@ select.form-control {
 .hero-text {
   text-align: center;
   color: var(--maritime-navy-dark);
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.1);
-  padding: var(--space-24);
+  padding: var(--space-32);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-lg);
@@ -802,23 +803,23 @@ select.form-control {
 }
 
 .hero-text h1 {
-  font-size: clamp(var(--font-size-4xl), 8vw, 4rem);
+  font-size: clamp(var(--font-size-4xl), 8vw, 5rem);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-20);
   color: var(--maritime-navy-dark);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-tagline {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-medium);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-20);
   color: var(--maritime-teal);
 }
 
 .hero-description {
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--space-24);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-32);
   color: var(--maritime-navy-dark);
   line-height: 1.6;
   opacity: 0.9;
@@ -826,7 +827,7 @@ select.form-control {
 
 .hero-buttons {
   display: flex;
-  gap: var(--space-16);
+  gap: var(--space-20);
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -1065,10 +1066,10 @@ select.form-control {
   z-index: 2;
   text-align: center;
   color: var(--maritime-navy-dark);
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.1);
-  padding: var(--space-32);
+  padding: var(--space-40);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-lg);
@@ -1076,22 +1077,22 @@ select.form-control {
 }
 
 .services-hero-content h1 {
-  font-size: clamp(var(--font-size-4xl), 8vw, 4rem);
+  font-size: clamp(var(--font-size-4xl), 8vw, 5rem);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-20);
   color: var(--maritime-navy-dark);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .services-hero-subtitle {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-medium);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-20);
   color: var(--maritime-teal);
 }
 
 .services-hero-description {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--maritime-navy-dark);
   line-height: 1.6;
   opacity: 0.9;
