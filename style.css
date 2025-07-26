@@ -1311,6 +1311,7 @@ select.form-control {
     background-size: cover;
     background-position: center bottom;
     min-height: 60vh;
+    padding-top: 70px; /* Account for fixed navbar height on mobile */
   }
   
   .hero-text {
@@ -1375,6 +1376,7 @@ select.form-control {
   .service-features li {
     font-size: var(--font-size-base);
     padding-left: var(--space-16);
+    color: var(--maritime-navy-dark);
   }
   
   .contact-content { 
@@ -1406,6 +1408,12 @@ select.form-control {
     min-height: 48px;
     font-size: var(--font-size-base);
     padding: var(--space-12) var(--space-20);
+  }
+  
+  .btn--outline {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--maritime-navy-dark);
   }
   
   .footer-content {
@@ -1485,6 +1493,7 @@ select.form-control {
 @media (max-width: 480px) {
   .hero {
     min-height: 50vh;
+    padding-top: 60px; /* Smaller padding for very small screens */
   }
   
   .hero-text { 
@@ -1524,6 +1533,12 @@ select.form-control {
   .service-item { 
     padding: var(--space-20); 
     margin: 0 var(--space-4);
+  }
+  
+  .service-features li {
+    font-size: var(--font-size-sm);
+    padding-left: var(--space-12);
+    color: var(--maritime-navy-dark);
   }
   
   .contact-form-container { 
