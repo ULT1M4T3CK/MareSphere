@@ -608,12 +608,7 @@ select.form-control {
   z-index: 1;
 }
 
-.hero-text {
-  text-align: center;
-  color: var(--maritime-white);
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 
 .hero-text h1 {
   font-size: clamp(var(--font-size-4xl), 8vw, 4rem);
@@ -641,6 +636,38 @@ select.form-control {
   gap: var(--space-16);
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* Hero layout with logo */
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-32);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  text-align: left;
+  color: var(--maritime-white);
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 /* Sections */
@@ -944,6 +971,22 @@ select.form-control {
   .hero {
     background-size: cover;
     background-position: center;
+  }
+  .hero-layout {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-24);
+  }
+  .hero-text {
+    text-align: center;
+    max-width: none;
+  }
+  .hero-logo {
+    order: -1;
+  }
+  .logo-image {
+    max-width: 200px;
+    max-height: 200px;
   }
   .hero-buttons { flex-direction: column; align-items: center; }
   .hero-buttons .btn { width: 100%; max-width: 300px; }
