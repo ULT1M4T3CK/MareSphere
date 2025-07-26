@@ -759,6 +759,7 @@ select.form-control {
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding-top: 80px; /* Account for fixed navbar height */
 }
 
 .hero::before {
