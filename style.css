@@ -613,6 +613,10 @@ select.form-control {
   box-shadow: 
     0 2px 8px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-menu-toggle:hover {
@@ -621,6 +625,13 @@ select.form-control {
   box-shadow: 
     0 4px 12px rgba(0, 0, 0, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.mobile-menu-toggle:active {
+  transform: translateY(0);
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .mobile-menu-toggle span {
@@ -651,7 +662,9 @@ select.form-control {
   position: fixed;
   top: 100%;
   left: 0;
+  right: 0;
   width: 100%;
+  height: auto;
   background: rgba(26, 62, 93, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -662,15 +675,20 @@ select.form-control {
     0 4px 16px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transform: translateY(-100%);
-  transition: transform var(--duration-normal) var(--ease-standard);
+  transition: all var(--duration-normal) var(--ease-standard);
+  z-index: 999;
+  overflow-y: auto;
+  max-height: 80vh;
 }
 
 .mobile-nav-menu.active {
+  display: block;
   transform: translateY(0);
 }
 
 .mobile-nav-menu .nav-link {
   display: block;
+  width: 100%;
   padding: var(--space-16);
   margin: var(--space-4) 0;
   border-radius: var(--radius-base);
@@ -681,14 +699,20 @@ select.form-control {
   box-shadow: 
     0 2px 8px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  color: var(--maritime-white);
+  text-decoration: none;
+  transition: all var(--duration-fast) var(--ease-standard);
+  text-align: center;
 }
 
-.mobile-nav-menu .nav-link:hover {
+.mobile-nav-menu .nav-link:hover,
+.mobile-nav-menu .nav-link:active {
   background: rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
   box-shadow: 
     0 4px 16px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: var(--maritime-white);
 }
 
 /* Hero section */
@@ -1149,9 +1173,21 @@ select.form-control {
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .nav-menu { display: none; }
-  .mobile-menu-toggle { display: flex; }
-  .mobile-nav-menu { display: block; }
+  .nav-menu { 
+    display: none; 
+  }
+  
+  .mobile-menu-toggle { 
+    display: flex; 
+  }
+  
+  .mobile-nav-menu { 
+    display: none; 
+  }
+  
+  .mobile-nav-menu.active {
+    display: block;
+  }
   
   .hero {
     background-size: cover;
