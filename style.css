@@ -689,6 +689,7 @@ select.form-control {
   font-size: var(--font-size-lg);
   line-height: 1.7;
   margin-bottom: var(--space-24);
+  color: var(--maritime-navy-dark);
 }
 
 .credentials {
