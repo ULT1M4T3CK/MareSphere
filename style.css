@@ -949,6 +949,7 @@ select.form-control {
   align-items: center;
   gap: var(--space-16);
   min-width: 120px;
+  min-height: 120px;
   flex-shrink: 0;
 }
 
