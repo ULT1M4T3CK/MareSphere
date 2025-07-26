@@ -699,6 +699,7 @@ select.form-control {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   position: relative;
@@ -711,6 +712,7 @@ select.form-control {
   inset: 0;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath d='M0 10c10 0 10-10 20-10s10 10 20 10 10-10 20-10 10 10 20 10 10-10 20-10v10H0z' fill='%23ffffff' opacity='0.1'/%3E%3C/svg%3E") repeat-x;
   background-size: 200px 40px;
+  background-attachment: fixed;
   animation: wave 20s linear infinite;
 }
 
@@ -727,13 +729,14 @@ select.form-control {
 .hero-content {
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, rgba(26, 62, 93, 0.7) 0%, rgba(44, 95, 124, 0.6) 50%, rgba(74, 144, 164, 0.5) 100%);
   z-index: 1;
 }
 
@@ -1312,4 +1315,15 @@ select.form-control {
 .btn:focus-visible, .form-control:focus, .nav-link:focus-visible {
   outline: 2px solid var(--maritime-teal);
   outline-offset: 2px;
+}
+
+/* Mobile fallback for parallax effect */
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+  }
+  
+  .hero::before {
+    background-attachment: scroll;
+  }
 }
