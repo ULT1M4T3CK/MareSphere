@@ -144,7 +144,7 @@
                 </div>
                 
                 <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" action="https://formspree.io/f/mnqewqzv" method="POST" target="_blank">
                         <div class="form-group">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" id="name" name="name" class="form-control" required>
@@ -173,6 +173,7 @@
                             <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
                         </div>
                         
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from MareSphere">
                         <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
                     </form>
                 </div>
