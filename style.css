@@ -1477,7 +1477,8 @@ select.form-control {
 }
 
 .services-hero-subtitle {
-  font-size: var(--font-size-2xl);
+  font-family: 'Always Forever', cursive;
+  font-size: 30px;
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--space-20);
   color: var(--maritime-teal);
@@ -1603,24 +1604,29 @@ select.form-control {
 
 /* Maritime button overrides */
 .btn--primary {
-  background: var(--maritime-teal);
+  background: linear-gradient(135deg, var(--maritime-teal), var(--maritime-teal-light));
   color: var(--maritime-white);
   border: none;
+  box-shadow: 0 4px 16px rgba(74, 144, 164, 0.35);
 }
 
 .btn--primary:hover {
-  background: var(--maritime-navy);
+  background: linear-gradient(135deg, var(--maritime-teal-dark), var(--maritime-teal));
+  box-shadow: 0 6px 20px rgba(74, 144, 164, 0.45);
 }
 
 .btn--outline {
-  background: transparent;
+  background: var(--maritime-navy-dark);
   color: var(--maritime-white);
-  border: 2px solid var(--maritime-white);
+  border: 2px solid var(--maritime-teal);
+  box-shadow: 0 4px 16px rgba(26, 62, 93, 0.3);
 }
 
 .btn--outline:hover {
-  background: var(--maritime-white);
-  color: var(--maritime-navy-dark);
+  background: var(--maritime-navy);
+  color: var(--maritime-white);
+  border-color: var(--maritime-teal-light);
+  box-shadow: 0 6px 20px rgba(26, 62, 93, 0.4);
 }
 
 [data-color-scheme="dark"] .btn--outline {
