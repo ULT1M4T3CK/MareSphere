@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactForm();
     initScrollEffects();
     initMobileMenu();
+    initServiceModals();
 });
 
 // Navigation functionality
@@ -404,6 +405,160 @@ window.addEventListener('load', function() {
         }, 300);
     }
 });
+
+// Service Modal Functionality
+function initServiceModals() {
+    const serviceCards = document.querySelectorAll('.service-card');
+    const modal = document.getElementById('serviceModal');
+    const modalOverlay = modal?.querySelector('.modal-overlay');
+    const modalClose = modal?.querySelector('.modal-close');
+    const modalIcon = document.getElementById('modalIcon');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+
+    // Service data
+    const serviceData = {
+        'nautical': {
+            title: 'Nautical-Technical Coordination',
+            icon: `<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>`,
+            description: `
+                <ul>
+                    <li>Coordination and supervision of shipyard stays, conversions, repairs, and technical projects</li>
+                    <li>Technical project planning, schedule monitoring, and quality control as Owner's Representative</li>
+                    <li>Interface between shipowner, shipyard, suppliers, authorities, and classification societies</li>
+                    <li>Pre-inspections to prepare for official, classification, or customer audits (including action catalogs, reports, and documentation checks)</li>
+                </ul>
+            `
+        },
+        'emergency': {
+            title: 'Maritime Emergency Management',
+            icon: `<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>`,
+            description: `
+                <ul>
+                    <li>24/7 availability in technical or organizational emergencies (e.g., casualties, deficiencies, document issues)</li>
+                    <li>Coordination of all immediate measures and necessary communication with authorities</li>
+                    <li>Mobilization and management of qualified service providers in case of damage</li>
+                    <li>Documentation of all actions for insurance, authorities, and customers</li>
+                </ul>
+            `
+        },
+        'spare-parts': {
+            title: 'Spare Parts Procurement',
+            icon: `<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 7h-3V6a4 4 0 0 0-8 0v1H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                <circle cx="12" cy="15" r="2"/>
+                <path d="M8 7V6a4 4 0 0 1 8 0v1"/>
+            </svg>`,
+            description: `
+                <ul>
+                    <li>Research, procurement, and organization of spare parts (focus on hard-to-get or obsolete parts)</li>
+                    <li>Supplier evaluation, quality control, and tracking of the supply chain</li>
+                    <li>Coordination of express and emergency deliveries</li>
+                    <li>Transparent, order-related processing (no commissions on service providers, clear procurement fee)</li>
+                </ul>
+            `
+        },
+        'mediation': {
+            title: 'Service Mediation & Commission',
+            icon: `<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>`,
+            description: `
+                <ul>
+                    <li>Mediation of specialized service providers (e.g., technicians, inspectors, shipyard services, surveyors, specialist consultants)</li>
+                    <li>Organization and follow-up of service assignments on behalf/interest of the customer</li>
+                    <li>Contract management between customer and service provider, transparent commission structure</li>
+                    <li>Quality assurance of outsourced services provided</li>
+                    <li>Focus: everything beyond pure spare parts procurement (e.g., special cleaning, NDT, consulting)</li>
+                </ul>
+            `
+        },
+        'documentation': {
+            title: 'Documentation & Certification Management',
+            icon: `<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10,9 9,9 8,9"/>
+            </svg>`,
+            description: `
+                <ul>
+                    <li>Organization, maintenance, and central archiving of all ship- and operation-relevant documents</li>
+                    <li>ISM/ISPS manuals, maintenance documentation, deadline management, audit support</li>
+                    <li>Support with reflagging, classifications, and class inspections</li>
+                </ul>
+            `
+        },
+        'ship-management': {
+            title: 'Customized Ship Management',
+            icon: `<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+            </svg>`,
+            description: `
+                <ul>
+                    <li>Administrative support for ship operators without their own back office</li>
+                    <li>Contract management, insurance, crew administration, authority contacts</li>
+                    <li>Digital document management and compliance monitoring</li>
+                </ul>
+            `
+        }
+    };
+
+    // Open modal function
+    function openModal(serviceId) {
+        const service = serviceData[serviceId];
+        if (!service || !modal) return;
+
+        modalIcon.innerHTML = service.icon;
+        modalTitle.textContent = service.title;
+        modalBody.innerHTML = service.description;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Close modal function
+    function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Add click event to service cards
+    serviceCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const serviceId = this.getAttribute('data-service');
+            openModal(serviceId);
+        });
+    });
+
+    // Close modal on overlay click
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', closeModal);
+    }
+
+    // Close modal on close button click
+    if (modalClose) {
+        modalClose.addEventListener('click', closeModal);
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal?.classList.contains('active')) {
+            closeModal();
+        }
+    });
+}
 
 // Add CSS for form validation
 const style = document.createElement('style');
