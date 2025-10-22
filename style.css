@@ -150,6 +150,13 @@
   src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Always Forever';
+  src: url('https://fonts.cdnfonts.com/s/19172/Always Forever.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Base styles */
 html {
   font: var(--font-size-base)/var(--line-height-normal) var(--font-family-base);
@@ -827,6 +834,7 @@ select.form-control {
 }
 
 .hero-text h1 {
+  font-family: Verdana, Geneva, sans-serif;
   font-size: clamp(var(--font-size-4xl), 8vw, 5rem);
   font-weight: var(--font-weight-bold);
   margin: 0;
@@ -835,6 +843,7 @@ select.form-control {
 }
 
 .hero-tagline {
+  font-family: 'Always Forever', cursive;
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--space-20);
@@ -1476,11 +1485,13 @@ select.form-control {
   }
   
   .hero-text h1 {
+    font-family: Verdana, Geneva, sans-serif;
     font-size: var(--font-size-3xl);
     margin-bottom: var(--space-12);
   }
   
   .hero-tagline {
+    font-family: 'Always Forever', cursive;
     font-size: var(--font-size-xl);
     margin-bottom: var(--space-16);
   }
