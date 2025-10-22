@@ -844,7 +844,7 @@ select.form-control {
 
 .hero-tagline {
   font-family: 'Always Forever', cursive;
-  font-size: var(--font-size-2xl);
+  font-size: 30px;
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--space-20);
   color: var(--maritime-teal);
@@ -1374,22 +1374,16 @@ select.form-control {
 }
 
 .modal-body li::before {
-  content: '✓';
+  content: '';
   position: absolute;
   left: var(--space-12);
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(135deg, var(--maritime-teal), var(--maritime-teal-light));
+  width: 8px;
+  height: 8px;
+  background: var(--maritime-teal);
   border-radius: 50%;
-  color: white;
-  font-size: 11px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(74, 144, 164, 0.3);
+  box-shadow: 0 0 0 2px rgba(74, 144, 164, 0.2);
 }
 
 .modal-body li:last-child {
@@ -1474,6 +1468,7 @@ select.form-control {
 }
 
 .services-hero-content h1 {
+  font-family: Verdana, Geneva, sans-serif;
   font-size: clamp(var(--font-size-4xl), 8vw, 5rem);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-20);
@@ -1824,6 +1819,7 @@ select.form-control {
   }
   
   .services-hero-content h1 {
+    font-family: Verdana, Geneva, sans-serif;
     font-size: var(--font-size-3xl);
   }
   
@@ -1917,7 +1913,7 @@ select.form-control {
   
   .hero-tagline {
     font-family: 'Always Forever', cursive;
-    font-size: var(--font-size-xl);
+    font-size: 28px;
     margin-bottom: var(--space-16);
   }
   
@@ -2159,9 +2155,8 @@ select.form-control {
   }
   
   .modal-body li::before {
-    width: 16px;
-    height: 16px;
-    font-size: 9px;
+    width: 6px;
+    height: 6px;
     left: var(--space-8);
   }
   
@@ -2182,6 +2177,7 @@ select.form-control {
   }
   
   .services-hero-content h1 {
+    font-family: Verdana, Geneva, sans-serif;
     font-size: var(--font-size-2xl);
   }
   
@@ -2200,11 +2196,13 @@ select.form-control {
   }
   
   .hero-text h1 {
+    font-family: Verdana, Geneva, sans-serif;
     font-size: var(--font-size-2xl);
   }
   
   .hero-tagline {
-    font-size: var(--font-size-lg);
+    font-family: 'Always Forever', cursive;
+    font-size: 26px;
   }
   
   .hero-description {
