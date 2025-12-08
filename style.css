@@ -824,9 +824,9 @@ select.form-control {
 }
 
 .hero-logo {
-  height: 80px;
+  height: 90px;
   width: auto;
-  max-width: 120px;
+  max-width: 130px;
   object-fit: contain;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   display: block;
@@ -1468,9 +1468,9 @@ select.form-control {
 }
 
 .services-hero-logo {
-  height: 80px;
+  height: 90px;
   width: auto;
-  max-width: 120px;
+  max-width: 130px;
   object-fit: contain;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   display: block;
@@ -1835,8 +1835,8 @@ select.form-control {
   }
   
   .services-hero-logo {
-    height: 60px;
-    max-width: 90px;
+    height: 70px;
+    max-width: 100px;
     margin-bottom: var(--space-12);
   }
   
@@ -1922,8 +1922,8 @@ select.form-control {
   }
   
   .hero-logo {
-    height: 60px;
-    max-width: 90px;
+    height: 70px;
+    max-width: 100px;
     margin-bottom: var(--space-12);
   }
   
@@ -2199,8 +2199,8 @@ select.form-control {
   }
   
   .services-hero-logo {
-    height: 50px;
-    max-width: 75px;
+    height: 60px;
+    max-width: 85px;
     margin-bottom: var(--space-8);
   }
   
@@ -2218,8 +2218,8 @@ select.form-control {
   }
   
   .hero-logo {
-    height: 50px;
-    max-width: 75px;
+    height: 60px;
+    max-width: 85px;
     margin-bottom: var(--space-8);
   }
   
