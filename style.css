@@ -919,7 +919,7 @@ select.form-control {
   object-fit: contain;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   display: block;
-  margin: 0 auto var(--space-16) auto;
+  margin: var(--space-16) auto 0 auto;
 }
 
 .hero-text h1 {
