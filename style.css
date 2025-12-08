@@ -881,6 +881,18 @@ select.form-control {
   }
 }
 
+@keyframes fadeInCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -917,6 +929,8 @@ select.form-control {
   margin: 0;
   color: var(--maritime-navy-dark);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInCenter 1s ease-out forwards;
+  opacity: 0;
 }
 
 .hero-tagline {
@@ -925,6 +939,8 @@ select.form-control {
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--space-20);
   color: var(--maritime-teal);
+  animation: fadeInCenter 1s ease-out 0.3s forwards;
+  opacity: 0;
 }
 
 .hero-description {
