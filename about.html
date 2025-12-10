@@ -3,132 +3,195 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="About MareSphere - Maritime consultancy founded by Finn Burchard. Over a decade of experience in ship operations and technical management.">
     <meta name="theme-color" content="#1a3e5d">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Über mich - MareSphere</title>
+    <title>About Us - MareSphere | Maritime Consultancy</title>
     <link rel="icon" type="image/png" href="Images/Logo_No_Background.png">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="design-system.css">
+    <link rel="stylesheet" href="styles-new.css">
 </head>
 
 <body>
     <!-- Navigation Header -->
-    <header class="navbar">
-        <div class="nav-content">
-            <div class="logo">
-                <a href="index.html">
-                    <h2>MareSphere</h2>
-                </a>
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar__content">
+                <div class="navbar__brand">
+                    <a href="index.html" class="navbar__logo">
+                        <span class="title">MareSphere</span>
+                    </a>
+                </div>
+
+                <nav class="navbar__menu" id="navbarMenu">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="about.html" class="nav-link active" data-i18n="nav.about">About</a>
+                    <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+                    <button class="lang-switch" id="langSwitch">EN</button>
+                </nav>
+
+                <button class="navbar__toggle" id="navbarToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <nav class="nav-menu">
-                <a href="index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
-                <a href="about.html" class="nav-link active" data-i18n="nav.about">Über mich</a>
-                <a href="services.html" class="nav-link" data-i18n="nav.services">Dienstleistungen</a>
-                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Kontakt</a>
-                <button class="lang-switch">EN</button>
-            </nav>
-            <button class="mobile-menu-toggle" aria-label="Mobiles Menü umschalten">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
 
-    <!-- Mobile Navigation Menu -->
-    <nav class="mobile-nav-menu">
-        <button class="mobile-nav-close" aria-label="Mobiles Menü schließen">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </button>
-        <a href="index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
-        <a href="about.html" class="nav-link active" data-i18n="nav.about">Über mich</a>
-        <a href="services.html" class="nav-link" data-i18n="nav.services">Dienstleistungen</a>
-        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Kontakt</a>
-        <button class="lang-switch">EN</button>
-    </nav>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav__content">
+            <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="mobile-nav__menu">
+                <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                <a href="about.html" class="nav-link active" data-i18n="nav.about">About</a>
+                <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+                <button class="lang-switch" id="langSwitchMobile">EN</button>
+            </nav>
+        </div>
+    </div>
 
     <!-- About Hero Section -->
-    <section class="services-hero">
+    <section class="hero hero--about">
+        <div class="hero__background">
+            <img src="images/about/about_team_collaboration_1765360168408.png" alt="Team Collaboration">
+            <div class="hero__overlay"></div>
+        </div>
+
         <div class="container">
-            <div class="services-hero-content">
-                <img src="Images/Logo_No_Background.png" alt="MareSphere Logo" class="services-hero-logo">
-                <h1 data-i18n="about.hero.title">Über mich</h1>
-                <p class="services-hero-subtitle" data-i18n="about.hero.subtitle">Professionelle Maritime Kompetenz</p>
+            <div class="hero__content">
+                <h1 class="hero__title" data-i18n="about.hero.title">About MareSphere</h1>
+                <p class="hero__tagline" data-i18n="about.hero.subtitle">Professional Maritime Expertise</p>
+                <p class="hero__description">
+                    Your partner in the maritime industry. We combine expert knowledge with practical experience
+                    to provide tailored solutions for your maritime challenges.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section class="about-section">
+    <!-- Company Story -->
+    <section class="section">
         <div class="container">
-            <div class="about-intro">
-                <h2 data-i18n="about.intro.title">Ihr Partner in der maritimen Branche</h2>
-                <p class="lead" data-i18n="about.intro.text">MareSphere verbindet fundiertes Fachwissen mit praktischer
-                    Erfahrung, um Ihnen maßgeschneiderte Lösungen für Ihre maritimen Herausforderungen zu bieten.</p>
+            <div class="section__header text-center">
+                <h2 data-i18n="about.intro.title">Your Partner in the Maritime Industry</h2>
+                <p class="lead" data-i18n="about.intro.text">
+                    MareSphere combines expert knowledge with practical experience to provide you with tailored
+                    solutions for your maritime challenges.
+                </p>
             </div>
 
-            <div class="about-profile">
-                <div class="profile-content">
-                    <div class="profile-header">
-                        <div class="profile-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>
-                        <div class="profile-info">
-                            <h3 data-i18n="about.profile.name">Finn Burchard</h3>
-                            <p class="profile-title" data-i18n="about.profile.title">Gründer & Maritimer Berater</p>
-                        </div>
+            <div class="grid grid--2-cols"
+                style="gap: var(--space-16); align-items: center; margin-top: var(--space-16);">
+                <div>
+                    <h3>Shipping Connects</h3>
+                    <p>Maritime services should connect, not complicate. "Shipping Connects" means that shipping
+                        companies, suppliers, authorities, and crews can work together seamlessly – with a reliable
+                        partner at their side.</p>
+
+                    <p>MareSphere stands for reliable, independent, and holistic consulting in shipping. We combine
+                        technical know-how with operational understanding to keep your fleet safely and efficiently on
+                        course.</p>
+
+                    <p>"Shipping Connects" is not just our slogan, but our promise: We bring together the right people,
+                        parts, and solutions.</p>
+                </div>
+                <div>
+                    <img src="images/hero/hero_offshore_platform_1765360021798.png" alt="Maritime Operations"
+                        style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Profile -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="grid grid--2-cols" style="gap: var(--space-16); align-items: center;">
+                <div>
+                    <img src="images/about/about_expert_portrait_1765360185796.png" alt="Finn Burchard"
+                        style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                </div>
+                <div>
+                    <div class="profile-header" style="margin-bottom: var(--space-6);">
+                        <h2 data-i18n="about.profile.name">Finn Burchard</h2>
+                        <p class="text-ocean" style="font-size: var(--text-xl); font-weight: var(--font-medium);"
+                            data-i18n="about.profile.title">Founder & Maritime Consultant</p>
                     </div>
-                    <div class="profile-bio">
-                        <p data-i18n="about.profile.bio1">Mit über einem Jahrzehnt Erfahrung in der maritimen Industrie
-                            hat Finn Burchard ein tiefgreifendes Verständnis für die komplexen Anforderungen des
-                            modernen Schiffsbetriebs entwickelt. Seine Karriere begann an Bord verschiedener
-                            Schiffstypen, bevor er in leitende Positionen im technischen Management und der
-                            Betriebskoordination wechselte.</p>
-                        <p data-i18n="about.profile.bio2">Heute vereint MareSphere diese praxisnahe Expertise mit einem
-                            strukturierten, kundenorientierten Ansatz. Ob bei der Koordination von Werftaufenthalten,
-                            der Beschaffung kritischer Ersatzteile oder der Begleitung durch Inspektionen und Audits –
-                            der Fokus liegt stets auf klaren Prozessen, transparenter Kommunikation und nachhaltigen
-                            Ergebnissen.</p>
-                        <p data-i18n="about.profile.bio3">Die Philosophie hinter MareSphere: Maritime Dienstleistungen
-                            sollten verbinden, nicht verkomplizieren. "Shipping Connects" bedeutet, dass Reedereien,
-                            Zulieferer, Behörden und Crews reibungslos zusammenarbeiten können – mit einem verlässlichen
-                            Partner an ihrer Seite.</p>
+
+                    <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+                        <p data-i18n="about.profile.bio1">
+                            With over a decade of experience in the maritime industry, Finn Burchard has developed a
+                            deep understanding of the complex requirements of modern ship operations. His career began
+                            aboard various vessel types before moving into leadership positions in technical management
+                            and operations coordination.
+                        </p>
+
+                        <p data-i18n="about.profile.bio2">
+                            Today, MareSphere combines this hands-on expertise with a structured, customer-oriented
+                            approach. Whether coordinating yard stays, procuring critical spare parts, or guiding
+                            through inspections and audits – the focus is always on clear processes, transparent
+                            communication, and sustainable results.
+                        </p>
+
+                        <p data-i18n="about.profile.bio3">
+                            The philosophy behind MareSphere: Maritime services should connect, not complicate.
+                            "Shipping Connects" means that shipping companies, suppliers, authorities, and crews can
+                            work together seamlessly – with a reliable partner at their side.
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
+    <!-- Values Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header text-center">
+                <h2>Our Values</h2>
+                <p class="lead">The principles that guide our work</p>
+            </div>
+
+            <div class="grid grid--3-cols">
+                <div class="feature-card">
+                    <div class="feature-card__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
                     </div>
-                    <h4 data-i18n="about.value.reliability.title">Verlässlichkeit</h4>
-                    <p data-i18n="about.value.reliability.text">Verbindliche Zusagen und termingerechte Umsetzung –
-                        darauf können Sie sich verlassen.</p>
+                    <h3 data-i18n="about.value.reliability.title">Reliability</h3>
+                    <p data-i18n="about.value.reliability.text">Binding commitments and timely delivery – you can count
+                        on it.</p>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
+
+                <div class="feature-card">
+                    <div class="feature-card__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="12" y1="8" x2="12" y2="12"></line>
                             <line x1="12" y1="16" x2="12.01" y2="16"></line>
                         </svg>
                     </div>
-                    <h4 data-i18n="about.value.transparency.title">Transparenz</h4>
-                    <p data-i18n="about.value.transparency.text">Klare Kommunikation und nachvollziehbare Prozesse ohne
-                        versteckte Überraschungen.</p>
+                    <h3 data-i18n="about.value.transparency.title">Transparency</h3>
+                    <p data-i18n="about.value.transparency.text">Clear communication and traceable processes without
+                        hidden surprises.</p>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
+
+                <div class="feature-card">
+                    <div class="feature-card__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                             <circle cx="9" cy="7" r="4"></circle>
@@ -136,66 +199,104 @@
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                         </svg>
                     </div>
-                    <h4 data-i18n="about.value.partnership.title">Partnerschaft</h4>
-                    <p data-i18n="about.value.partnership.text">Langfristige Zusammenarbeit auf Augenhöhe – Ihr Erfolg
-                        ist unser gemeinsames Ziel.</p>
+                    <h3 data-i18n="about.value.partnership.title">Partnership</h3>
+                    <p data-i18n="about.value.partnership.text">Long-term collaboration at eye level – your success is
+                        our shared goal.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="about-cta">
-                <p data-i18n="about.cta.text">Überzeugen Sie sich selbst von unserer Expertise.</p>
-                <a href="contact.html" class="btn btn--primary" data-i18n="about.cta.button">Kontakt aufnehmen</a>
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2 data-i18n="about.cta.text">See for yourself what we can do for you.</h2>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn--primary btn--lg" data-i18n="about.cta.button">Get in
+                        Touch</a>
+                    <a href="services.html" class="btn btn--outline btn--lg">View Our Services</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-info">
-                    <h3>MareSphere</h3>
-                    <p>Shipping Connects.</p>
+        <div class="container">
+            <div class="footer__content grid grid--4-cols">
+                <div class="footer__section">
+                    <h3 class="footer__brand title">MareSphere</h3>
+                    <p class="footer__tagline slogan">Shipping Connects</p>
+                    <p class="footer__description">Professional maritime consultancy services for modern shipping
+                        operations.</p>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title" data-i18n="footer.navigation">Navigation</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title" data-i18n="footer.services">Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="services.html#nautical-coordination">Technical Coordination</a></li>
+                        <li><a href="services.html#emergency-response">Emergency Response</a></li>
+                        <li><a href="services.html#spare-parts">Spare Parts</a></li>
+                        <li><a href="services.html#brokerage">Brokerage Services</a></li>
+                        <li><a href="services.html#documentation">Documentation</a></li>
+                        <li><a href="services.html#ship-management">Ship Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <a href="tel:+491727905628">+49 172 7905628</a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <a href="mailto:info@maresphere.com">info@maresphere.com</a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Schwalbenweg 4<br>18184 Roggetin</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="footer-section">
-                <h4 data-i18n="footer.navigation">Navigation</h4>
-                <div class="footer-links">
-                    <a href="index.html" data-i18n="nav.home">Startseite</a>
-                    <a href="about.html" data-i18n="nav.about">Über mich</a>
-                    <a href="services.html" data-i18n="nav.services">Dienstleistungen</a>
-                    <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 MareSphere. All rights reserved. | Shipping Connects</p>
+                <div class="footer__legal">
+                    <a href="terms.html" data-i18n="footer.terms">Terms & Conditions</a>
                 </div>
             </div>
-
-            <div class="footer-section">
-                <h4 data-i18n="footer.services">Dienstleistungen</h4>
-                <div class="footer-links">
-                    <a href="services.html">Nautisch-Technische Koordination</a>
-                    <a href="services.html">Notfallmanagement</a>
-                    <a href="services.html">Ersatzteilbeschaffung</a>
-                    <a href="services.html">Dokumentationsmanagement</a>
-                    <a href="services.html">Schiffsmanagement</a>
-                    <a href="services.html">Zusatzmodule</a>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h4 data-i18n="footer.legal">Rechtliches</h4>
-                <div class="footer-links">
-                    <a href="terms.html" data-i18n="footer.terms">Allgemeine Geschäftsbedingungen</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p data-i18n="footer.copyright">&copy; 2025 MareSphere. Alle Rechte vorbehalten. | Shipping Connects</p>
         </div>
     </footer>
 
     <script src="translations.js"></script>
-    <script src="app.js"></script>
+    <script src="app-new.js"></script>
 </body>
 
 </html>

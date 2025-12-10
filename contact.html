@@ -3,176 +3,219 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact MareSphere for maritime consultancy services. Get in touch for technical coordination, emergency response, and ship management solutions.">
     <meta name="theme-color" content="#1a3e5d">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Kontakt - MareSphere</title>
+    <title>Contact Us - MareSphere | Maritime Consultancy</title>
     <link rel="icon" type="image/png" href="Images/Logo_No_Background.png">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="design-system.css">
+    <link rel="stylesheet" href="styles-new.css">
 </head>
 
 <body>
     <!-- Navigation Header -->
-    <header class="navbar">
-        <div class="nav-content">
-            <div class="logo">
-                <a href="index.html">
-                    <h2>MareSphere</h2>
-                </a>
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar__content">
+                <div class="navbar__brand">
+                    <a href="index.html" class="navbar__logo">
+                        <span class="title">MareSphere</span>
+                    </a>
+                </div>
+
+                <nav class="navbar__menu" id="navbarMenu">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+                    <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
+                    <button class="lang-switch" id="langSwitch">EN</button>
+                </nav>
+
+                <button class="navbar__toggle" id="navbarToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <nav class="nav-menu">
-                <a href="index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
-                <a href="about.html" class="nav-link" data-i18n="nav.about">Über mich</a>
-                <a href="services.html" class="nav-link" data-i18n="nav.services">Dienstleistungen</a>
-                <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Kontakt</a>
-                <button class="lang-switch">EN</button>
-            </nav>
-            <button class="mobile-menu-toggle" aria-label="Mobiles Menü umschalten">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
 
-    <!-- Mobile Navigation Menu -->
-    <nav class="mobile-nav-menu">
-        <button class="mobile-nav-close" aria-label="Mobiles Menü schließen">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </button>
-        <a href="index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
-        <a href="about.html" class="nav-link" data-i18n="nav.about">Über mich</a>
-        <a href="services.html" class="nav-link" data-i18n="nav.services">Dienstleistungen</a>
-        <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Kontakt</a>
-        <button class="lang-switch">EN</button>
-    </nav>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav__content">
+            <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="mobile-nav__menu">
+                <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
+                <button class="lang-switch" id="langSwitchMobile">EN</button>
+            </nav>
+        </div>
+    </div>
 
     <!-- Contact Hero Section -->
-    <section class="services-hero">
+    <section class="hero hero--contact">
+        <div class="hero__background">
+            <img src="images/services/service_brokerage_1765360142708.png" alt="Contact">
+            <div class="hero__overlay"></div>
+        </div>
+
         <div class="container">
-            <div class="services-hero-content">
-                <img src="Images/Logo_No_Background.png" alt="MareSphere Logo" class="services-hero-logo">
-                <h1 data-i18n="contact.hero.title">Kontakt</h1>
-                <p class="services-hero-subtitle" data-i18n="contact.hero.subtitle">Nehmen Sie Kontakt für maritime
-                    Lösungen auf</p>
+            <div class="hero__content">
+                <h1 class="hero__title" data-i18n="contact.hero.title">Contact Us</h1>
+                <p class="hero__tagline" data-i18n="contact.hero.subtitle">Get in touch for maritime solutions</p>
+                <p class="hero__description">
+                    Ready to discuss your maritime needs? Contact us today to learn how we can support your operations.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="section">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Ansprechpartner</h4>
-                            <p>Finn Burchard</p>
-                        </div>
-                    </div>
+            <div class="grid grid--2-cols" style="gap: var(--space-16); align-items: start;">
+                <!-- Contact Information -->
+                <div>
+                    <h2 style="margin-bottom: var(--space-8);">Get In Touch</h2>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                            </svg>
+                    <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+                        <!-- Contact Person -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Contact Person</h4>
+                                <p>Finn Burchard</p>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>Telefon</h4>
-                            <p>+49 172 7905628</p>
-                        </div>
-                    </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
+                        <!-- Phone -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+491727905628">+49 172 7905628</a></p>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>E-Mail</h4>
-                            <p>info@maresphere.com</p>
-                        </div>
-                    </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
+                        <!-- Email -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@maresphere.com">info@maresphere.com</a></p>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>Adresse</h4>
-                            <p>Schwalbenweg 4<br>18184 Roggetin</p>
-                        </div>
-                    </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <polyline points="12,6 12,12 16,14" />
-                            </svg>
+                        <!-- Address -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Schwalbenweg 4<br>18184 Roggetin<br>Germany</p>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>Öffnungszeiten</h4>
-                            <p>Montag - Freitag<br>8:00 - 18:00 Uhr MEZ</p>
+
+                        <!-- Business Hours -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday<br>8:00 AM - 6:00 PM CET</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-form-container">
-                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mnqewqzv" method="POST"
-                        target="_blank">
-                        <!-- Added id="contactForm" to enable validation in app.js -->
+                <!-- Contact Form -->
+                <div>
+                    <h2 style="margin-bottom: var(--space-6);">Send Us a Message</h2>
+
+                    <form id="contactForm" action="https://formspree.io/f/mnqewqzv" method="POST" target="_blank">
                         <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
+                            <label for="name" class="form-label">Name *</label>
                             <input type="text" id="name" name="name" class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="email" class="form-label">E-Mail</label>
+                            <label for="email" class="form-label">Email *</label>
                             <input type="email" id="email" name="email" class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="service" class="form-label">Interesse an Dienstleistung</label>
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service of Interest</label>
                             <select id="service" name="service" class="form-control">
-                                <option value="">Wählen Sie eine Dienstleistung</option>
-                                <option value="nautical-coordination">Nautisch-Technische Koordination</option>
-                                <option value="emergency-management">Maritimes Notfallmanagement</option>
-                                <option value="spare-parts">Ersatzteilbeschaffung & Vermittlung</option>
-                                <option value="documentation">Dokumentations- & Zertifikatsmanagement</option>
-                                <option value="ship-management">Individuelles Schiffsmanagement</option>
-                                <option value="additional-modules">Zusätzliche Service-Module</option>
+                                <option value="">Select a service</option>
+                                <option value="nautical-coordination">Nautical-Technical Coordination</option>
+                                <option value="emergency-management">Maritime Emergency Coordination</option>
+                                <option value="spare-parts">Spare Parts Procurement</option>
+                                <option value="brokerage">Maritime Services (Brokerage)</option>
+                                <option value="documentation">Documentation & Certificate Management</option>
+                                <option value="ship-management">Ship & Project Management</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="message" class="form-label">Nachricht</label>
-                            <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
                         </div>
 
                         <input type="hidden" name="_subject" value="New Contact Form Submission from MareSphere">
-                        <button type="submit" class="btn btn--primary btn--full-width">Nachricht senden</button>
+
+                        <button type="submit" class="btn btn--primary btn--full-width">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -181,53 +224,140 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-info">
-                    <h3>MareSphere</h3>
-                    <p>Shipping Connects.</p>
+        <div class="container">
+            <div class="footer__content grid grid--4-cols">
+                <div class="footer__section">
+                    <h3 class="footer__brand title">MareSphere</h3>
+                    <p class="footer__tagline slogan">Shipping Connects</p>
+                    <p class="footer__description">Professional maritime consultancy services for modern shipping
+                        operations.</p>
                 </div>
 
-            </div>
+                <div class="footer__section">
+                    <h4 class="footer__title" data-i18n="footer.navigation">Navigation</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-section">
-                <h4 data-i18n="footer.navigation">Navigation</h4>
-                <div class="footer-links">
-                    <a href="index.html" data-i18n="nav.home">Startseite</a>
-                    <a href="about.html" data-i18n="nav.about">Über mich</a>
-                    <a href="services.html" data-i18n="nav.services">Dienstleistungen</a>
-                    <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+                <div class="footer__section">
+                    <h4 class="footer__title" data-i18n="footer.services">Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="services.html#nautical-coordination">Technical Coordination</a></li>
+                        <li><a href="services.html#emergency-response">Emergency Response</a></li>
+                        <li><a href="services.html#spare-parts">Spare Parts</a></li>
+                        <li><a href="services.html#brokerage">Brokerage Services</a></li>
+                        <li><a href="services.html#documentation">Documentation</a></li>
+                        <li><a href="services.html#ship-management">Ship Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <a href="tel:+491727905628">+49 172 7905628</a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <a href="mailto:info@maresphere.com">info@maresphere.com</a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Schwalbenweg 4<br>18184 Roggetin</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="footer-section">
-                <h4 data-i18n="footer.services">Dienstleistungen</h4>
-                <div class="footer-links">
-                    <a href="services.html">Nautisch-Technische Koordination</a>
-                    <a href="services.html">Notfallmanagement</a>
-                    <a href="services.html">Ersatzteilbeschaffung</a>
-                    <a href="services.html">Dokumentationsmanagement</a>
-                    <a href="services.html">Schiffsmanagement</a>
-                    <a href="services.html">Zusatzmodule</a>
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 MareSphere. All rights reserved. | Shipping Connects</p>
+                <div class="footer__legal">
+                    <a href="terms.html" data-i18n="footer.terms">Terms & Conditions</a>
                 </div>
             </div>
-
-            <div class="footer-section">
-                <h4 data-i18n="footer.legal">Rechtliches</h4>
-                <div class="footer-links">
-                    <a href="terms.html" data-i18n="footer.terms">Allgemeine Geschäftsbedingungen</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p data-i18n="footer.copyright">&copy; 2025 MareSphere. Alle Rechte vorbehalten. | Shipping Connects</p>
-        </div>
         </div>
     </footer>
 
+    <style>
+        .hero--contact {
+            min-height: 50vh;
+        }
+
+        .contact-info-card {
+            display: flex;
+            gap: var(--space-4);
+            padding: var(--space-6);
+            background: var(--white);
+            border-radius: var(--radius-base);
+            border: 1px solid var(--gray-200);
+            transition: all var(--duration-normal) var(--ease-default);
+        }
+
+        .contact-info-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--ocean-light);
+        }
+
+        .contact-info-card__icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--ocean-blue), var(--ocean-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--white);
+        }
+
+        .contact-info-card h4 {
+            font-size: var(--text-base);
+            font-weight: var(--font-semibold);
+            color: var(--navy-dark);
+            margin-bottom: var(--space-2);
+        }
+
+        .contact-info-card p {
+            margin: 0;
+            color: var(--gray-600);
+        }
+
+        .contact-info-card a {
+            color: var(--ocean-blue);
+            transition: color var(--duration-fast) var(--ease-default);
+        }
+
+        .contact-info-card a:hover {
+            color: var(--ocean-light);
+        }
+
+        @media (max-width: 768px) {
+            .grid--2-cols {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
     <script src="translations.js"></script>
-    <script src="app.js"></script>
+    <script src="app-new.js"></script>
 </body>
 
 </html>
