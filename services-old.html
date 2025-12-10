@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a3e5d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Dienstleistungen - MareSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">
+                    <h2>MareSphere</h2>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
+                <a href="about.html" class="nav-link" data-i18n="nav.about">Über mich</a>
+                <a href="services.html" class="nav-link active" data-i18n="nav.services">Dienstleistungen</a>
+                <a href="contact.html" class="nav-link" data-i18n="nav.contact">Kontakt</a>
+                <button class="lang-switch">EN</button>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Mobiles Menü umschalten">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav-menu">
+        <button class="mobile-nav-close" aria-label="Mobiles Menü schließen">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">Über mich</a>
+        <a href="services.html" class="nav-link active" data-i18n="nav.services">Dienstleistungen</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Kontakt</a>
+        <button class="lang-switch">EN</button>
+    </nav>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="services-hero-content">
+                <img src="Images/Logo_No_Background.png" alt="MareSphere Logo" class="services-hero-logo">
+                <h1 data-i18n="services.hero.title">Unsere Dienstleistungen</h1>
+                <p class="services-hero-subtitle" data-i18n="services.hero.subtitle">Umfassende maritime Lösungen</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card" data-service="nautical">
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Nautisch-Technische Koordination</h3>
+                    <p class="service-card-excerpt">Effiziente Prozesse, klare Schnittstellen und technische Sicherheit
+                        für Ihre Flotte.</p>
+                    <button class="service-card-btn">Mehr erfahren</button>
+                </div>
+
+                <div class="service-card" data-service="emergency">
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                            <line x1="12" y1="9" x2="12" y2="13" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Maritime Notfallkoordination</h3>
+                    <p class="service-card-excerpt">Wenn es ernst wird, braucht es Struktur und einen klaren
+                        Ansprechpartner.</p>
+                    <button class="service-card-btn">Mehr erfahren</button>
+                </div>
+
+                <div class="service-card" data-service="spare-parts">
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20 7h-3V6a4 4 0 0 0-8 0v1H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+                            <circle cx="12" cy="15" r="2" />
+                            <path d="M8 7V6a4 4 0 0 1 8 0v1" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Spezialisierte Ersatzteilbeschaffung</h3>
+                    <p class="service-card-excerpt">Wenn das richtige Teil zur richtigen Zeit am richtigen Ort sein
+                        muss.</p>
+                    <button class="service-card-btn">Mehr erfahren</button>
+                </div>
+
+                <div class="service-card" data-service="mediation">
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Maritime Services (Brokerage)</h3>
+                    <p class="service-card-excerpt">Verlässliche Partner, klar koordiniert – für jeden Bedarf den
+                        passenden Dienstleister.</p>
+                    <button class="service-card-btn">Mehr erfahren</button>
+                </div>
+
+                <div class="service-card" data-service="documentation">
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14,2 14,8 20,8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10,9 9,9 8,9" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Dokumentations- & Zertifikatsmanagement</h3>
+                    <p class="service-card-excerpt">Damit Ihre Schiffsdokumente immer „auf Kurs“ bleiben.</p>
+                    <button class="service-card-btn">Mehr erfahren</button>
+                </div>
+
+                <div class="service-card" data-service="ship-management">
+                    <div class="service-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Individualisiertes Bereederungs- & Projektmanagement</h3>
+                    <p class="service-card-excerpt">Persönliche Betreuung und maßgeschneiderte Lösungen für Ihre
+                        Schiffe.</p>
+                    <button class="service-card-btn">Mehr erfahren</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Modal schließen">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Bereit loszulegen?</h2>
+                <p>Kontaktieren Sie uns noch heute, um Ihre maritimen Beratungsbedürfnisse zu besprechen und zu
+                    entdecken, wie unsere spezialisierten Dienstleistungen Ihren Betrieb unterstützen können.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn--primary">Kontaktieren Sie uns</a>
+                    <a href="index.html" class="btn btn--outline">Zurück zur Startseite</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-info">
+                    <h3>MareSphere</h3>
+                    <p>Shipping Connects.</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-i18n="footer.navigation">Navigation</h4>
+                <div class="footer-links">
+                    <a href="index.html" data-i18n="nav.home">Startseite</a>
+                    <a href="about.html" data-i18n="nav.about">Über mich</a>
+                    <a href="services.html" data-i18n="nav.services">Dienstleistungen</a>
+                    <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-i18n="footer.services">Dienstleistungen</h4>
+                <div class="footer-links">
+                    <a href="services.html">Nautisch-Technische Koordination</a>
+                    <a href="services.html">Notfallmanagement</a>
+                    <a href="services.html">Ersatzteilbeschaffung</a>
+                    <a href="services.html">Dokumentationsmanagement</a>
+                    <a href="services.html">Schiffsmanagement</a>
+                    <a href="services.html">Zusatzmodule</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 data-i18n="footer.legal">Rechtliches</h4>
+                <div class="footer-links">
+                    <a href="terms.html" data-i18n="footer.terms">Allgemeine Geschäftsbedingungen</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">&copy; 2025 MareSphere. Alle Rechte vorbehalten. | Shipping Connects</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
